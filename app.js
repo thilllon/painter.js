@@ -14,12 +14,10 @@
       // canvas pixel manipulating size: the actual image file size
       const CANVAS_SIZE = 700;
       // order of setting context is important.
-      // 뒤에서 값을 변경해도 앞의 값이 변경되지 않음.
       canvas.width = CANVAS_SIZE;
       canvas.height = CANVAS_SIZE;
       ctx.strokeStyle = _color;
       ctx.fillStyle = '#ffffff';
-
       // set background color by default
       // Turn off if you want to get transparent background
       ctx.fillRect(0, 0, CANVAS_SIZE, CANVAS_SIZE);
@@ -32,9 +30,12 @@
       canvas.addEventListener('click', onClickCanvas);
       canvas.addEventListener('contextmenu', onClickContextMenu);
     }
+
+    // palette
     Array.from(document.querySelectorAll('.controls__color')).forEach((col) =>
       col.addEventListener('click', onChangeColor)
     );
+
     const thick = document.getElementById('thickness');
     if (thick) {
       thick.setAttribute('min', 0.1);
@@ -43,10 +44,12 @@
       thick.setAttribute('step', 0.1);
       thick.addEventListener('change', onChangeThickness);
     }
+
     const modeButton = document.getElementById('mode');
     if (modeButton) {
       modeButton.addEventListener('click', onClickMode);
     }
+
     const saveButton = document.getElementById('save');
     if (saveButton) {
       saveButton.addEventListener('click', onClickSave);
@@ -116,6 +119,7 @@
   };
 
   const onMouseMove = (ev) => {
+    if (_filling) return;
     // meaning of line in Canvas is a set of very very small pieces of lines
     const { offsetX: x, offsetY: y } = ev;
     if (_painting) {

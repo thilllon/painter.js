@@ -2,6 +2,10 @@
 
 Painter with vanilla javascript
 
+## Demo
+
+[https://thilllon.github.io/painter.js/](https://thilllon.github.io/painter.js/)
+
 ## Feature
 
 - vanilla javascript
