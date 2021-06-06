@@ -15,10 +15,10 @@ Painter with vanilla javascript
 - Vanilla javascript
 - Only 4 files: **index.html**, **app.js**, **styles.css**, **reset.css**
 - [reset CSS](https://meyerweb.com/eric/tools/css/reset/)
-- image saving
-- background fill mode
-- several colors
-- using css variables
+- Image saving
+- 2 modes: paint mode(changing brush color) / fill mode(changing background color)
+- 9 palette colors
+- Using css variables
 
 ```css
 /* ****************************** */
