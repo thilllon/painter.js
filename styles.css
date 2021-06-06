@@ -1,0 +1,92 @@
+@import 'reset.css';
+:root {
+  --c1: black;
+  --c2: white;
+  --c3: gray;
+  --c4: red;
+  --c5: green;
+  --c6: blue;
+  --c7: yellow;
+  --c8: brown;
+  --c9: aqua;
+  --background-color-main: white;
+  --background-color-sub: #f5f8fd;
+
+  --shadow-color-main: rgba(50, 50, 93, 0.11);
+  --shadow-color-sub: rgba(0, 0, 0, 0.8);
+}
+
+body {
+  background-color: var(--background-color-sub);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.canvas {
+  width: 700px;
+  height: 700px;
+  background-color: var(--background-color-main);
+  border-radius: 15px;
+  /* border: 0.7px solid black; */
+  box-shadow: 0 4px 6px var(--shadow-color-main), 0 1px 3px var(--shadow-color-sub);
+  margin-top: 50px;
+}
+.controls {
+  margin-top: 30px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.controls > div {
+  margin-top: 20px;
+}
+.controls .controls__colors {
+  display: flex;
+}
+.controls .controls__colors .controls__color {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px var(--shadow-color-main), 0 1px 3px var(--shadow-color-sub);
+  margin: 0 5px;
+}
+.controls .controls__colors .controls__color.c1 {
+  background-color: var(--c1);
+}
+.controls .controls__colors .controls__color.c2 {
+  background-color: var(--c2);
+}
+.controls .controls__colors .controls__color.c3 {
+  background-color: var(--c3);
+}
+.controls .controls__colors .controls__color.c4 {
+  background-color: var(--c4);
+}
+.controls .controls__colors .controls__color.c5 {
+  background-color: var(--c5);
+}
+.controls .controls__colors .controls__color.c6 {
+  background-color: var(--c6);
+}
+.controls .controls__colors .controls__color.c7 {
+  background-color: var(--c7);
+}
+.controls .controls__colors .controls__color.c8 {
+  background-color: var(--c8);
+}
+.controls .controls__colors .controls__color.c9 {
+  background-color: var(--c9);
+}
+
+.controls .controls__btns button {
+  text-transform: uppercase;
+  /* box-shadow: 0 2px 5px; */
+  min-width: 100px;
+  height: 30px;
+  /* background-color: var(--background-color-sub); */
+  box-shadow: 0 4px 6px var(--shadow-color-main), 0 1px 3px var(--shadow-color-sub);
+  border-radius: 3px;
+  margin: 0 5px;
+}
