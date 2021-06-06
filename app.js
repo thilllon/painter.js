@@ -1,9 +1,11 @@
 (() => {
-  // MDN: canvas
+  // Canvas
   // https://developer.mozilla.org/ko/docs/Web/API/Canvas_API
+
   let _painting = false;
   let _filling = false;
   let _color = '#2c2c2c';
+  let _backgroundColor = '#ffffff';
   let _thickness = 2.5;
 
   const canvas = document.getElementById('canvas');
@@ -17,9 +19,9 @@
       canvas.width = CANVAS_SIZE;
       canvas.height = CANVAS_SIZE;
       ctx.strokeStyle = _color;
-      ctx.fillStyle = '#ffffff';
-      // set background color by default
-      // Turn off if you want to get transparent background
+      ctx.fillStyle = _backgroundColor;
+      // Set background color by default
+      // Turn off if you want to get transparent background (when saving image file as .png)
       ctx.fillRect(0, 0, CANVAS_SIZE, CANVAS_SIZE);
       ctx.lineWidth = _thickness;
       canvas.addEventListener('mouseenter', onMouseEnter);
@@ -32,8 +34,8 @@
     }
 
     // palette
-    Array.from(document.querySelectorAll('.controls__color')).forEach((col) =>
-      col.addEventListener('click', onChangeColor)
+    Array.from(document.querySelectorAll('.controls__color')).forEach((paletteColor) =>
+      paletteColor.addEventListener('click', onChangeColor)
     );
 
     const thick = document.getElementById('thickness');
@@ -74,15 +76,15 @@
     }
   };
 
-  const onMouseEnter = (ev) => {
+  const onMouseEnter = () => {
     // startPainting();
   };
 
-  const onMouseLeave = (ev) => {
+  const onMouseLeave = () => {
     stopPainting();
   };
 
-  const onMouseDown = (ev) => {
+  const onMouseDown = () => {
     startPainting();
   };
 
@@ -101,7 +103,7 @@
     _filling = !_filling;
   };
 
-  const onClickSave = (ev) => {
+  const onClickSave = () => {
     const image = canvas.toDataURL('image/jpeg');
     const link = document.createElement('a');
     link.href = image;
