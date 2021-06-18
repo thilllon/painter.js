@@ -51,19 +51,19 @@ div {
   - 2D context
     - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D
   - Check points
-    - How it works?
-    - What is line in canvas?
-    - What is context?
+    - How does `Canvas` work?
+    - What is the `line` in canvas?
+    - What is the `context`?
   - canvas
-    - <code>canvas.width</code>, <code>canvas.height</code> => Determine the actual image file size
-    - <code>canvas.toDataURL()</code> => Encode to binary and express it as base64
+    - `canvas.width`, `canvas.height` => Determine the actual image file size
+    - `canvas.toDataURL()` => Encode to binary and express it as base64
   - context
-    - <code>context.lineWidth</code>
-    - <code>context.lineTo()</code>
-    - <code>context.stroke()</code>
-    - <code>context.beginPath()</code>
-    - <code>context.moveTo()</code>
-    - <code>context.endPath()</code>
+    - `context.lineWidth`
+    - `context.lineTo()`
+    - `context.stroke()`
+    - `context.beginPath()`
+    - `context.moveTo()`
+    - `context.endPath()`
 
 ## Reference
 
