@@ -47,8 +47,8 @@ div {
   - event handlers
   - initializer
 
-- Using [Canvas API](https://developer.mozilla.org/docs/Web/API/Canvas_API)
-  - Used 2D context
+- [Canvas API](https://developer.mozilla.org/docs/Web/API/Canvas_API)
+  - 2D context
     - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D
   - Check points
     - How it works?
