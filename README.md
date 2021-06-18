@@ -8,14 +8,14 @@ Painter with vanilla javascript
 
 ## Install
 
-- Open **index.html**
+- Open `index.html`
 
 ## Feature
 
 - Vanilla javascript
-- Only 4 files: **index.html**, **app.js**, **styles.css**, **reset.css**
-- [reset CSS](https://meyerweb.com/eric/tools/css/reset/)
-- Image saving
+- 4 files: `index.html`, `app.js`, `styles.css`, `reset.css`
+- Applying [reset CSS](https://meyerweb.com/eric/tools/css/reset/)
+- Image saving function
 - 2 modes: paint mode(changing brush color) / fill mode(changing background color)
 - 9 palette colors
 - Using css variables
@@ -41,7 +41,7 @@ div {
 ```
 
 - Using immediate execution function to prevent global scope corruption
-- **app.js** is composed with 3 parts
+- `app.js` is composed with 3 parts
 
   - variable declaration
   - event handlers
