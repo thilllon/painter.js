@@ -8,17 +8,19 @@ Painter with vanilla javascript
 
 ## Install
 
-- Open `index.html`
+- `index.html`파일을 연다.
 
 ## Feature
 
-- Vanilla javascript
-- 4 files: `index.html`, `app.js`, `styles.css`, `reset.css`
-- Applying [reset CSS](https://meyerweb.com/eric/tools/css/reset/)
-- Image saving function
-- 2 modes: paint mode(changing brush color) / fill mode(changing background color)
-- 9 palette colors
-- Using css variables
+- 바닐라 자바스크립트
+- 4개 파일로 구성: `index.html`, `app.js`, `styles.css`, `reset.css`
+- [reset CSS](https://meyerweb.com/eric/tools/css/reset/) 적용
+- 이미지 저장 기능
+- 두가지 모드
+  - 그리기 모드: 브러시 컬러 변경
+  - 채우기 모드: 배경 색 변경
+- 9가지 색 제공
+- css 변수 사용
 
 ```css
 /* ****************************** */
@@ -40,12 +42,12 @@ div {
 }
 ```
 
-- Using immediate execution function to prevent global scope corruption
-- `app.js` is composed with 3 parts
+- 전역변수 스코프가 오염되지 않도록 즉시실행함수를 이용하였다.
+- `app.js` 는 세 파트로 구성되어있다.
 
-  - variable declaration
-  - event handlers
-  - initializer
+  - 변수 선언
+  - 이벤트 핸들러 정의
+  - 초기화
 
 - [Canvas API](https://developer.mozilla.org/docs/Web/API/Canvas_API)
   - 2D context

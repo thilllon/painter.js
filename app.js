@@ -2,6 +2,10 @@
   // Canvas
   // https://developer.mozilla.org/ko/docs/Web/API/Canvas_API
 
+  // configuration
+  // canvas pixel manipulating size: the actual image file size
+  const CANVAS_SIZE = 700;
+
   let _painting = false;
   let _filling = false;
   let _color = '#2c2c2c';
@@ -13,8 +17,6 @@
 
   const initialize = () => {
     if (canvas) {
-      // canvas pixel manipulating size: the actual image file size
-      const CANVAS_SIZE = 700;
       // order of setting context is important.
       canvas.width = CANVAS_SIZE;
       canvas.height = CANVAS_SIZE;
